@@ -50,6 +50,8 @@
 
 .timer-container {
   margin-top: 4rem;
+  align-self: center;
+  justify-self: center;
 }
 
 .banner {
