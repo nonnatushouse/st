@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, BrowserRouter, Routes, NavLink } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 import "./App.css"; 
 import Timer from "./Timer/Timer";
 import banner from "./Images/st_banner2023.jpg"
@@ -16,8 +16,15 @@ class App extends Component {
     const currDate = new Date()
 
     const st2023 = Date.UTC(2023, 8, 1, 8, 0, 0);
+    const st2024 = Date.UTC(2023, 8, 1, 8, 0, 0);
 
-    return st2023;
+    const startHasPassed = st2023 - currDate;
+    if (!startHasPassed) {
+      return st2023;
+    } else {
+      return st2024;
+    }
+    ;
   }
   //npx run subs
   render() {
