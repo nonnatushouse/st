@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+.page-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 4.5rem;
+  min-height: 100%;
+  position: relative;
+  padding-bottom: 3rem;
+
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -35,4 +45,16 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.timer-container {
+  margin-top: 4rem;
+}
+
+.banner {
+  position: absolute;
+  width: 100vw;
+  z-index: -100;
+  top: 0;
 }
